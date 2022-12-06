@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Load result</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Conclusão</h1>
+      </header>
+      <main>
+        <div class="container">
+          <p>
+            A soma dos números ${userFirstNumber} + ${userSecondNumber} = ${
+            userFirstNumber + userSecondNumber }
+          </p>
+          <p>
+            A subtração dos números ${userFirstNumber} - ${userSecondNumber} =
+            ${ userFirstNumber - userSecondNumber }
+          </p>
+          <p>
+            A multiplicação dos números ${userFirstNumber} x ${userSecondNumber}
+            = ${ userFirstNumber * userSecondNumber }
+          </p>
+          <p>
+            A divisão dos números ${userFirstNumber} ÷ ${userSecondNumber} = ${
+            userFirstNumber / userSecondNumber }
+          </p>
+        </div>
+        <div class="container">
+          <p>
+            O resto da divisão dos números ${userFirstNumber} ÷
+            ${userSecondNumber} é igual a ${ userFirstNumber % userSecondNumber
+            }
+          </p>
+          <p>
+            The sum of ${userFirstNumber} + ${userSecondNumber} is ${oddOrEven}
+          </p>
+          <p>Your numbers are ${equalOrDifferent}</p>
+          <p>
+            The square root of the sum of their numbers is
+            %{Math.sqrt(userFirstNumber + userSecondNumber)}
+          </p>
+        </div>
+      </main>
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

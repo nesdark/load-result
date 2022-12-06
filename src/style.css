@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body,
+.app {
+  height: calc(100vh - 8.1rem);
+}
+
+body {
+  font-family: "Palanquin", sans-serif;
+  background-color: #28293e;
+
+  color: white;
+
+  text-align: center;
+}
+
+.app {
+  padding-block: 8.1rem;
+  max-width: clamp(500px, 80%, 1000px);
+  margin-inline: auto;
+}
+
+header {
+  background-color: #92544c;
+  border-radius: 2rem 2rem 0 0;
+}
+
+header h1 {
+  font-size: clamp(3.5rem, 0.8rem + 3vw, 5rem);
+}
+
+main {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+  background-color: #7a8da8;
+
+  border-radius: 0 0 2rem 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container:last-child {
+  border-left: 1px white solid;
+}
+
+main p:not(:last-child) {
+  border-bottom: 1px white solid;
+}
+
+main p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+
+  padding: 0.8rem 3.2rem;
+
+  font-size: clamp(1.6rem, 0.8rem + 1vw, 4rem);
+
+  text-align: left;
+}
+
+@media (max-width: 459px) {
+  .app {
+    padding-block: 4.1rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .container:last-child {
+    border-left: none;
+  }
+
+  .container:first-child p:last-child {
+    border-bottom: 1px white solid;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .app {
+    padding-block: 2.1rem;
+  }
+}
